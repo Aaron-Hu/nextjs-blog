@@ -1,14 +1,11 @@
 import Head from 'next/head'
-import Link from 'next/Link'
+import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import Layout from '../../components/layout'
 import { Spin } from 'antd';
 
-import useSWR from 'swr'
-const fetcher = (url) => fetch(url).then((res) => res.json())
-
 export async function getServerSideProps() {
-  const res = await fetch("https://github.com/vercel/next.js/discussions/11424")
+  const res = await Promise.resolve('...')
   const data = res.toString()
 
   return {
