@@ -3,13 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --port 9003",
     "build": "next build",
-    "start": "next start"
+    "start": "next start --port 9003"
   },
   "dependencies": {
+    "antd": "^4.16.7",
+    "gray-matter": "^4.0.3",
     "next": "^10.0.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-router-dom": "^5.2.0",
+    "sass": "^1.35.2",
+    "swr": "^0.5.6"
   }
 }
